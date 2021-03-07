@@ -4,7 +4,7 @@
 ## Actual features:
 - Infinite random generated levels;
 - Main menu;
-- Player lives
+- Player lives;
 
 ## Known bugs:
 - weird collisions;
