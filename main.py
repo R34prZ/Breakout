@@ -105,6 +105,7 @@ def main():
         elif ball_rect.bottom  >= height:
             lives -= 1
             ball_rect.x, ball_rect.y = width / 2 - 5, height / 2 + 50
+            player_rect.x, player_rect.y = width / 2 - 50, height - 50
             starting = True
             
         ball_rect.x += ball_velocity[0]
@@ -201,6 +202,7 @@ def main():
 
         if starting:
             paused = True
+            player_rect.x, player_rect.y = width / 2 - 50, height - 50
             blit_text(screen, 'Press SPACE!', 0, height - 200, WHITE, True, screen_size=WIN_SIZE)
 
         if not paused:
